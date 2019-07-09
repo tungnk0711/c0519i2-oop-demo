@@ -6,6 +6,30 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
 
+        Animal animal1 = new Bird(100, 150, "Blue");
+        animal1.run();
+        animal1.eat();
+        ((Bird) animal1).fly();
+
+
+        Animal animal2 = new Horse(150, 300, "White");
+        animal2.run();
+        animal2.eat();
+
+        if(animal2 instanceof Bird){
+            System.out.println("True");
+        }else {
+            System.out.println("False");
+        }
+
+
+
+        /*Animal animal = new Animal(100, 150);
+
+        System.out.println(animal.toString());*/
+
+
+
         /*Rectangle rectangle1 = new Rectangle(4, 8);
         int area1 = rectangle1.getArea();
         int perimeter1 = rectangle1.getPerimeter();
@@ -22,7 +46,7 @@ public class Main {
         System.out.println("Area: "+area2);
         System.out.println("Perimeter: "+ perimeter2);*/
 
-        QuanLyNgheSy quanLyNgheSy = new QuanLyNgheSy();
+        /*QuanLyNgheSy quanLyNgheSy = new QuanLyNgheSy();
 
         NgheSy ngheSy1 = new NgheSy("Tram Anh", 1);
         quanLyNgheSy.themNgheSy(ngheSy1);
@@ -40,6 +64,7 @@ public class Main {
             if (ngheSy != null) {
                 System.out.println("ID: " + ngheSy.getId() + " NAME: " + ngheSy.getName());
             }
-        }
+        }*/
+
     }
 }
